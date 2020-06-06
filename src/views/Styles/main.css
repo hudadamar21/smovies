@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #1f2841;
+}
+
+main{
+ padding: 70px 20px;
+}
+main.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .not-found-movies{
+  margin: auto;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 30px;
+}
+
+.error{
+  width: 100%;
+  text-align: center;
+  color: rgb(245, 94, 94);
+  font-size: 20px;
+  
+}
+
+

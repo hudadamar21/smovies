@@ -1,0 +1,46 @@
+.donate{
+  padding: 70px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.donate h3{
+  font-size: 40px;
+}
+.donate p{
+  font-size: 20px;
+}
+.donate .phone-number{
+  cursor: pointer;
+  width: 300px;
+  background-color: white;
+  color: rgb(119, 150, 243);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  text-align: center;
+  transition: .3s;
+}
+.donate .phone-number > *{
+  text-shadow: inset 2px 3px 2px rgba(0, 0, 0, 0.8);
+}
+.donate .phone-number:hover{
+  background-color: rgb(247, 247, 247);
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px){
+  .donate h3{
+    font-size: 25px;
+  }
+  .donate p{
+    margin-top: 5px;
+    font-size: 15px;
+  }
+}

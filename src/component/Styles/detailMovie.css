@@ -1,0 +1,164 @@
+.overlay{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 11;
+}
+
+.detail-card{
+  /* position card to center */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* size card */
+  width: 65%;
+  height: 85%;
+
+  /* displaying items . left to right */
+  display: flex;
+
+  /* styling optional */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  border-radius: 3px;
+  background-color: #fff;
+  
+  z-index: 12;
+}
+.detail-card .poster{
+  width: 45%;
+  background-color: royalblue;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-detail{
+  background-color: royalblue;
+  color: white;
+  padding: 7px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.detail-card .detail-desc{
+  font-weight: 600;
+  width: 55%;
+  padding: 15px;
+}
+.detail-card .detail-desc ul li{
+  list-style: none;
+  margin-top: 15px;
+  margin-left: 15px; 
+}
+
+.detail-card .detail-desc button.close-detail{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 70px;
+  height: 35px;
+  font-weight: 600;
+  background-color: royalblue;
+  color: white;
+  border-radius: 3px;
+  border: 2px solid royalblue;
+  transition: .3s;
+}
+.detail-card .detail-desc button.close-detail:hover{
+  background-color: white;
+  color: royalblue;
+}
+
+.is-loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(80, 116, 224);
+  animation: loading-fade 1s infinite;
+}
+
+@keyframes loading-fade {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1100px){
+  .detail-card{
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 768px){
+  .detail-card .poster{
+    background-size: contain;
+  }
+  .detail-card{
+    flex-direction: column;
+    width: 60%;
+    height: 95%;
+  }
+  .detail-card .poster{
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .detail-card .poster img{
+    height: 100%;
+    width: 100%;
+  }
+  .title-detail{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+    width: 90%;
+    padding: 3px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .detail-card .detail-desc{
+    overflow: auto;
+    flex: 1;
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 10px;
+    font-size: 13px;
+  }
+  .detail-card .detail-desc button.close-detail{
+    top: 50%;
+    right: -20%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 600px){
+  .detail-card{
+    width: 80%;
+  }
+  .detail-card .detail-desc button.close-detail{
+    top: 45%;
+    right: 10px;
+  }
+  .detail-card .poster{
+    background-size: contain;
+  }
+}
