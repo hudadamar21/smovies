@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "13e203cfc81c06607fee1fc46e6fafdd",
+    "revision": "19af1db49b948a0562a2708c026aaa88",
     "url": "/smovies/index.html"
   },
   {
-    "revision": "993a7a94b6eddd3ad246",
-    "url": "/smovies/static/css/main.6ad71354.chunk.css"
+    "revision": "82b1bd136b2200725df8",
+    "url": "/smovies/static/css/main.672dd1b9.chunk.css"
   },
   {
-    "revision": "801fc0873883001c1e7b",
-    "url": "/smovies/static/js/2.9cd67278.chunk.js"
+    "revision": "ac4bfb88d773160fba86",
+    "url": "/smovies/static/js/2.c3b8b374.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/smovies/static/js/2.9cd67278.chunk.js.LICENSE.txt"
+    "url": "/smovies/static/js/2.c3b8b374.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "993a7a94b6eddd3ad246",
-    "url": "/smovies/static/js/main.d8a9c97d.chunk.js"
+    "revision": "82b1bd136b2200725df8",
+    "url": "/smovies/static/js/main.27a89c7b.chunk.js"
   },
   {
     "revision": "d4445b789c6f72b8e184",
